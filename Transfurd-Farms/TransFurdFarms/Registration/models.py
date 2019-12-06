@@ -6,10 +6,11 @@ import datetime
 
 
 class Animals(models.Model):
-    Number_Of_Animal = models.IntegerField
-    Age = models.IntegerField
-    Vaccination_Date = models.DateTimeField
-    Marturity_Age = models.DateTimeField
+    animalType = models.CharField
+    numberOfAnimals = models.IntegerField
+    age = models.IntegerField
+    vaccinationDate = models.DateTimeField
+    maturityAge = models.DateTimeField
 
 
 def __str__(self):
